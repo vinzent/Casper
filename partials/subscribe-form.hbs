@@ -1,0 +1,19 @@
+<section class="subscribe-form">
+    <h3 class="subscribe-form-title">Anmelden für den {{@site.title}} Newsletter</h3>
+    <p class="subscribe-form-description">Bleibe auf dem Laufenden - erhalte die neuen News auch per Email. Kostenlos!</p>
+    <form data-members-form="subscribe">
+        <div class="form-group">
+            <input class="subscribe-email" data-members-email placeholder="youremail@example.com" autocomplete="false" />
+            <button class="button primary" type="submit">
+                <span class="button-content">Anmelden</span>
+                <span class="button-loader">{{> "icons/loader"}}</span>
+            </button>
+        </div>
+        <div class="message-success">
+            <strong>Super!</strong> Prüfe deine Mails - du must deine Anmeldung mit einem Klick bestätigen.
+        </div>
+        <div class="message-error">
+            Please enter a valid email address!
+        </div>
+    </form>
+</section>
